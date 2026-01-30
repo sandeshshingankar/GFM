@@ -1,0 +1,332 @@
+:root {
+    --primary: #0077b6;
+    --primary-dark: #005a8d;
+    --secondary: #00b4d8;
+    --accent: #0096c7;
+    --light-bg: #f0f9ff;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --border-color: #e0e7ff;
+    --white: #ffffff;
+    --success: #10b981;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e0f7ff 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 119, 182, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-back {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-back:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.nav-back:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.nav-title {
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.hero-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background: rgba(0, 119, 182, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 10px;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+/* Faculty Section */
+.faculty-section {
+    margin-bottom: 60px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-header h2 {
+    font-size: 36px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section-header p {
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+/* Faculty Grid */
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 30px;
+}
+
+.faculty-card-link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+}
+
+.faculty-card-link:focus-within {
+    outline: none;
+}
+
+.faculty-card-link:focus-within .faculty-card {
+    outline: 3px solid var(--secondary);
+    outline-offset: 2px;
+}
+
+.faculty-card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.faculty-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 119, 182, 0.15);
+    border-color: var(--primary);
+}
+
+.faculty-card:focus-within {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.faculty-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e0f7ff 100%);
+}
+
+.faculty-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.faculty-card:hover .faculty-image img {
+    transform: scale(1.05);
+}
+
+.faculty-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.faculty-info h3 {
+    font-size: 18px;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.faculty-info p {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+/* Add Faculty Section */
+.add-faculty-section {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 60px 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.08);
+    margin-top: 60px;
+}
+
+.add-faculty-card {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e0f7ff 100%);
+    border-radius: 12px;
+    padding: 40px;
+    border: 2px dashed var(--primary);
+    transition: all 0.3s ease;
+}
+
+.add-faculty-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 8px 20px rgba(0, 119, 182, 0.2);
+}
+
+.add-icon {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.add-faculty-card h3 {
+    font-size: 24px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.add-faculty-card p {
+    color: var(--text-light);
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.add-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+    color: var(--white);
+    padding: 12px 40px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.add-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 119, 182, 0.3);
+}
+
+.add-btn:focus {
+    outline: 2px solid var(--white);
+    outline-offset: 2px;
+}
+
+.add-btn:active {
+    transform: scale(0.98);
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .faculty-grid {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .section-header h2 {
+        font-size: 28px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 28px;
+    }
+
+    .nav-title {
+        font-size: 18px;
+    }
+
+    .nav-container {
+        padding: 15px 20px;
+    }
+
+    .faculty-image {
+        height: 150px;
+    }
+
+    .add-faculty-card {
+        padding: 30px 20px;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+}

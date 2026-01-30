@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Dashboard - IT Department</title>
+    <link rel="stylesheet" href="faculty-dashboard.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="faculty.html" class="nav-back">← Back to Faculty</a>
+        <h1 class="nav-title">Faculty Dashboard</h1>
+        <div></div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section">
+    <img class="hero-banner" src="https://www.nmiet.edu.in/wp-content/uploads/2025/02/final-header-scaled.png" alt="IT Department">
+    <div class="hero-overlay">
+        <h1>Faculty Dashboard</h1>
+        <p>Manage and view assigned students</p>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Faculty Profile Section -->
+    <section class="faculty-profile-section">
+        <div id="faculty-profile" class="faculty-profile-card">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+
+    <!-- Students Section -->
+    <section class="students-section">
+        <div class="section-header">
+            <h2>Assigned Students</h2>
+            <p>View and manage all students assigned to this faculty member</p>
+        </div>
+
+        <!-- Search and Filter -->
+        <div class="search-bar-container">
+            <input 
+                type="text" 
+                id="search-input" 
+                class="search-input" 
+                placeholder="Search by name, roll number, or email..."
+                aria-label="Search students"
+            >
+            <button class="search-btn" aria-label="Search">
+                <span>🔍</span>
+            </button>
+        </div>
+
+        <!-- Students Table -->
+        <div class="table-container">
+            <table class="students-table" role="table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll Number</th>
+                        <th>Class/Division</th>
+                        <th>Contact</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="students-tbody">
+                    <!-- Populated by JavaScript -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- No Results Message -->
+        <div id="no-results" class="no-results" style="display: none;">
+            <p>No students found matching your search.</p>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 Department of IT.Made by Sandesh,Khushal & Vaishnavi</p>
+</footer>
+
+<script src="faculty-dashboard.js"></script>
+</body>
+</html>

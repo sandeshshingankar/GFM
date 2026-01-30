@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - IT Department</title>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-back">← Back to Home</a>
+        <h1 class="nav-title">Student Portal</h1>
+        <div></div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero-section">
+    <img class="hero-banner" src="https://www.nmiet.edu.in/wp-content/uploads/2025/02/final-header-scaled.png" alt="IT Department">
+    <div class="hero-overlay">
+        <h1>Student Portal</h1>
+        <p>Access your academic information and records</p>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Student Profile Card -->
+    <section class="profile-section">
+        <div class="profile-card">
+            <div class="profile-header">
+                <img src="https://via.placeholder.com/150/0077b6/ffffff?text=Student" alt="Student Profile" class="profile-image">
+                <div class="profile-details">
+                    <h2 class="student-name">Sandesh Shingankar</h2>
+                    <div class="profile-info-grid">
+                        <div class="info-item">
+                            <span class="info-label">Class:</span>
+                            <span class="info-value">TEITA 70</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Contact:</span>
+                            <span class="info-value">8668916036</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">sandeshshingankar@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">LinkedIn:</span>
+                            <a href="https://linkedin.com/in/sandeshshingankar" class="info-link" target="_blank">linkedin.com/in/sandeshshingankar</a>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">GitHub:</span>
+                            <a href="https://github.com/sandeshshingankar" class="info-link" target="_blank">github.com/sandeshshingankar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Profile Action Buttons -->
+            <div class="profile-actions">
+                <button class="action-btn edit-btn">Edit</button>
+                <button class="action-btn delete-btn">Delete</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expandable Sections -->
+    <section class="expandable-sections">
+        <!-- Student Details -->
+        <div class="expandable-item">
+            <button class="expandable-header" aria-expanded="false">
+                <span class="header-content">
+                    <span class="section-icon">👤</span>
+                    <span class="section-title">Student Details</span>
+                </span>
+                <span class="expand-icon">▼</span>
+            </button>
+            <div class="expandable-content">
+                <div class="content-inner">
+                    <div class="detail-item">
+                        <span class="label">Roll Number:</span>
+                        <span class="value">70</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Date of Birth:</span>
+                        <span class="value">25/04/2005</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Gender:</span>
+                        <span class="value">Male</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Address:</span>
+                        <span class="value">Pune, Maharashtra</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Attendance Section -->
+        <div class="expandable-item">
+            <button class="expandable-header" aria-expanded="false">
+                <span class="header-content">
+                    <span class="section-icon">📋</span>
+                    <span class="section-title">Attendance Section</span>
+                </span>
+                <span class="expand-icon">▼</span>
+            </button>
+            <div class="expandable-content">
+                <div class="content-inner">
+                    <div class="attendance-summary">
+                        <div class="attendance-stat">
+                            <span class="stat-label">Present:</span>
+                            <span class="stat-value present">72</span>
+                        </div>
+                        <div class="attendance-stat">
+                            <span class="stat-label">Absent:</span>
+                            <span class="stat-value absent">3</span>
+                        </div>
+                        <div class="attendance-stat">
+                            <span class="stat-label">Attendance %:</span>
+                            <span class="stat-value percentage">96%</span>
+                        </div>
+                    </div>
+                    <p class="attendance-note">Last updated: January 28, 2025</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Notice -->
+        <div class="expandable-item">
+            <button class="expandable-header" aria-expanded="false">
+                <span class="header-content">
+                    <span class="section-icon">📢</span>
+                    <span class="section-title">Notice</span>
+                </span>
+                <span class="expand-icon">▼</span>
+            </button>
+            <div class="expandable-content">
+                <div class="content-inner">
+                    <div class="notice-item">
+                        <h4 class="notice-title">Upcoming Exam Schedule</h4>
+                        <p class="notice-date">Posted on: 25/01/2025</p>
+                        <p class="notice-content">Semester exams will be conducted from February 1-15, 2025. All students must report to their respective exam halls 15 minutes before the exam time.</p>
+                    </div>
+                    <div class="notice-item">
+                        <h4 class="notice-title">Assignment Submission Deadline</h4>
+                        <p class="notice-date">Posted on: 20/01/2025</p>
+                        <p class="notice-content">All assignments for the current semester must be submitted by February 10, 2025. Late submissions will not be accepted.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Academic Details -->
+        <div class="expandable-item">
+            <button class="expandable-header" aria-expanded="false">
+                <span class="header-content">
+                    <span class="section-icon">🎓</span>
+                    <span class="section-title">Academic Details</span>
+                </span>
+                <span class="expand-icon">▼</span>
+            </button>
+            <div class="expandable-content">
+                <div class="content-inner">
+                    <div class="academic-item">
+                        <span class="subject">Computer Networks &Security </span>
+                        <span class="marks">92/100</span>
+                    </div>
+                    <div class="academic-item">
+                        <span class="subject">Web Development</span>
+                        <span class="marks">88/100</span>
+                    </div>
+                    <div class="academic-item">
+                        <span class="subject">Data Science and Big Data Analytics</span>
+                        <span class="marks">85/100</span>
+                    </div>
+                    <div class="academic-item">
+                        <span class="subject">Elective-II </span>
+                        <span class="marks">90/100</span>
+                    </div>
+                    <div class="gpa-section">
+                        <span class="label">Current SGPA:</span>
+                        <span class="value gpa">8.4</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documents -->
+        <div class="expandable-item">
+            <button class="expandable-header" aria-expanded="false">
+                <span class="header-content">
+                    <span class="section-icon">📄</span>
+                    <span class="section-title">Documents</span>
+                </span>
+                <span class="expand-icon">▼</span>
+            </button>
+            <div class="expandable-content">
+                <div class="content-inner">
+                    <div class="document-item">
+                        <span class="doc-name">Admit Card - Semester Exam</span>
+                        <a href="#" class="doc-download">Download</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="doc-name">Transcript - Semester 5</span>
+                        <a href="#" class="doc-download">Download</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="doc-name">Bonafide Certificate</span>
+                        <a href="#" class="doc-download">Download</a>
+                    </div>
+                    <div class="document-item">
+                        <span class="doc-name">Fee Receipt - Current Semester</span>
+                        <a href="#" class="doc-download">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Parent Notification -->
+        <div class="expandable-item">
+            <button class="expandable-header" aria-expanded="false">
+                <span class="header-content">
+                    <span class="section-icon">👨‍👩‍👧‍👦</span>
+                    <span class="section-title">Parent Notification</span>
+                </span>
+                <span class="expand-icon">▼</span>
+            </button>
+            <div class="expandable-content">
+                <div class="content-inner">
+                    <div class="notification-item">
+                        <span class="notif-type">📧 Email Notification</span>
+                        <p class="notif-status">Enabled - Parents will receive email updates</p>
+                    </div>
+                    <div class="notification-item">
+                        <span class="notif-type">📱 SMS Notification</span>
+                        <p class="notif-status">Enabled - Parents will receive SMS alerts</p>
+                    </div>
+                    <p class="notification-note">Parents can disable notifications anytime through their portal.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Student Button -->
+    <section class="add-student-section">
+        <button class="add-student-btn">
+            <span class="btn-icon">➕</span>
+            <span class="btn-text">Add Student</span>
+        </button>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2025 Department of IT.  Made by sandesh ,Khushal & Vaishnavi</p>
+</footer>
+
+<script src="student.js"></script>
+</body>
+</html>

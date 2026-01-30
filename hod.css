@@ -1,0 +1,337 @@
+:root {
+    --primary: #0077b6;
+    --primary-dark: #005a8d;
+    --secondary: #00b4d8;
+    --accent: #0096c7;
+    --light-bg: #f0f9ff;
+    --text-dark: #1a1a1a;
+    --text-light: #666;
+    --border-color: #e0e7ff;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e0f7ff 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    background: var(--white);
+    box-shadow: 0 2px 8px rgba(0, 119, 182, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-back {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-back:hover {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.nav-back:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.nav-title {
+    font-size: 24px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+.hero-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background: rgba(0, 119, 182, 0.4);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-overlay h1 {
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Container */
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+/* Profile Section */
+.profile-section {
+    margin-bottom: 60px;
+}
+
+.profile-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 119, 182, 0.15);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 4px solid var(--primary);
+}
+
+.profile-info h2 {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.profile-info .title {
+    font-size: 18px;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.profile-info .department {
+    color: var(--text-light);
+    font-size: 16px;
+}
+
+/* Stats Section */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.stat-card {
+    background: var(--white);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--primary);
+    cursor: pointer;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 119, 182, 0.15);
+}
+
+.stat-card:focus-within {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.stat-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.stat-card h3 {
+    color: var(--text-dark);
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.stat-number {
+    font-size: 32px;
+    color: var(--primary);
+    font-weight: 700;
+}
+
+/* Quick Access Section */
+.quick-access {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 15px rgba(0, 119, 182, 0.08);
+}
+
+.quick-access h2 {
+    font-size: 28px;
+    color: var(--primary);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.access-buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.access-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, var(--light-bg) 0%, #e0f7ff 100%);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+.access-btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 119, 182, 0.2);
+    border-color: var(--primary);
+}
+
+.access-btn:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.access-btn:active {
+    transform: translateY(-2px);
+}
+
+.btn-icon {
+    font-size: 32px;
+    min-width: 50px;
+}
+
+.btn-text strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.btn-text p {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+.faculty-btn {
+    border-top: 4px solid var(--primary);
+}
+
+.student-btn {
+    border-top: 4px solid #10b981;
+}
+
+.reports-btn {
+    border-top: 4px solid #f59e0b;
+}
+
+.settings-btn {
+    border-top: 4px solid #8b5cf6;
+}
+
+/* Footer */
+.footer {
+    background: var(--text-dark);
+    color: var(--white);
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .profile-image {
+        width: 150px;
+        height: 150px;
+    }
+
+    .profile-info h2 {
+        font-size: 24px;
+    }
+
+    .hero-overlay h1 {
+        font-size: 28px;
+    }
+
+    .nav-title {
+        font-size: 18px;
+    }
+
+    .nav-container {
+        padding: 15px 20px;
+    }
+
+    .quick-access h2 {
+        font-size: 22px;
+    }
+
+    .access-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        padding: 40px 20px;
+    }
+}
